@@ -39,4 +39,4 @@ dev-clean: dev-down
 
 # 最终测试用命令
 dev-tests: dev-up
-	docker-compose exec recruit make tests
+	docker-compose exec recruit ./vendor/bin/phpunit --testdox tests
